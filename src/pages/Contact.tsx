@@ -27,8 +27,8 @@ const Contact = () => {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     toast({
-      title: "Message Sent!",
-      description: "Thank you for contacting us. We'll get back to you within 24 hours.",
+      title: "Tin Nhắn Đã Được Gửi!",
+      description: "Cảm ơn bạn đã liên hệ với chúng tôi. Chúng tôi sẽ phản hồi trong vòng 24 giờ.",
     });
     setFormData({
       name: "",
@@ -42,27 +42,27 @@ const Contact = () => {
   const contactInfo = [
     {
       icon: Phone,
-      title: "Phone",
-      details: ["+1 (555) 123-4567", "+1 (555) 123-4568"],
-      description: "Monday to Friday, 9 AM - 6 PM"
+      title: "Điện Thoại",
+      details: ["+84 (028) 1234-5678", "+84 (028) 1234-5679"],
+      description: "Thứ 2 đến Thứ 6, 9:00 - 18:00"
     },
     {
       icon: Mail,
       title: "Email",
-      details: ["info@misopack.com", "support@misopack.com"],
-      description: "We'll respond within 24 hours"
+      details: ["info@misopack.vn", "support@misopack.vn"],
+      description: "Chúng tôi sẽ phản hồi trong 24 giờ"
     },
     {
       icon: MapPin,
-      title: "Address",
-      details: ["123 Business Avenue, Suite 100", "City, State 12345, USA"],
-      description: "Visit our showroom"
+      title: "Địa Chỉ",
+      details: ["123 Đường Kinh Doanh, Quận 1", "TP. Hồ Chí Minh, Việt Nam"],
+      description: "Ghé thăm showroom của chúng tôi"
     },
     {
       icon: Clock,
-      title: "Business Hours",
-      details: ["Monday - Friday: 9:00 AM - 6:00 PM", "Saturday: 10:00 AM - 4:00 PM"],
-      description: "Closed on Sundays and holidays"
+      title: "Giờ Làm Việc",
+      details: ["Thứ 2 - Thứ 6: 9:00 - 18:00", "Thứ 7: 10:00 - 16:00"],
+      description: "Đóng cửa Chủ nhật và các ngày lễ"
     }
   ];
 
@@ -72,11 +72,11 @@ const Contact = () => {
         {/* Header */}
         <div className="text-center mb-12">
           <h1 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-            Contact Us
+            Liên Hệ Với Chúng Tôi
           </h1>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Have questions about our products or need support? We're here to help! 
-            Reach out to us through any of the channels below.
+            Có câu hỏi về sản phẩm hoặc cần hỗ trợ? Chúng tôi ở đây để giúp bạn! 
+            Liên hệ với chúng tôi qua bất kỳ kênh nào dưới đây.
           </p>
         </div>
 
@@ -84,7 +84,7 @@ const Contact = () => {
           {/* Contact Information */}
           <div className="space-y-6">
             <h2 className="text-2xl font-bold text-foreground mb-6">
-              Get in Touch
+              Liên Hệ
             </h2>
             
             {contactInfo.map((info, index) => {
@@ -119,13 +119,13 @@ const Contact = () => {
             <Card>
               <CardContent className="p-6">
                 <h3 className="text-lg font-semibold text-foreground mb-4">
-                  Find Us
+                  Tìm Chúng Tôi
                 </h3>
                 <div className="bg-muted rounded-lg h-48 flex items-center justify-center">
                   <div className="text-center">
                     <MapPin className="h-12 w-12 text-muted-foreground mx-auto mb-2" />
                     <p className="text-muted-foreground">
-                      Interactive map would be here
+                      Bản đồ tương tác sẽ có ở đây
                     </p>
                   </div>
                 </div>
@@ -138,10 +138,10 @@ const Contact = () => {
             <Card>
               <CardHeader>
                 <CardTitle className="text-2xl font-bold text-foreground">
-                  Send us a Message
+                  Gửi Tin Nhắn Cho Chúng Tôi
                 </CardTitle>
                 <p className="text-muted-foreground">
-                  Fill out the form below and we'll get back to you as soon as possible.
+                  Điền vào form dưới đây và chúng tôi sẽ phản hồi sớm nhất có thể.
                 </p>
               </CardHeader>
               <CardContent>
@@ -149,20 +149,20 @@ const Contact = () => {
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <div className="space-y-2">
                       <label htmlFor="name" className="text-sm font-medium text-foreground">
-                        Full Name *
+                        Họ và Tên *
                       </label>
                       <Input
                         id="name"
                         name="name"
                         value={formData.name}
                         onChange={handleInputChange}
-                        placeholder="Your full name"
+                        placeholder="Họ và tên của bạn"
                         required
                       />
                     </div>
                     <div className="space-y-2">
                       <label htmlFor="email" className="text-sm font-medium text-foreground">
-                        Email Address *
+                        Địa Chỉ Email *
                       </label>
                       <Input
                         id="email"

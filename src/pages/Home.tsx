@@ -11,42 +11,42 @@ const Home = () => {
   const features = [
     {
       icon: Package,
-      title: "Professional Quality",
-      description: "Premium packaging tools designed for COD businesses of all sizes"
+      title: "Chất Lượng Chuyên Nghiệp",
+      description: "Dụng cụ đóng gói cao cấp được thiết kế cho doanh nghiệp COD mọi quy mô"
     },
     {
       icon: Shield,
-      title: "Reliable & Durable",
-      description: "Built to last with high-quality materials and superior craftsmanship"
+      title: "Đáng Tin Cậy & Bền Bỉ",
+      description: "Được chế tạo để sử dụng lâu dài với vật liệu chất lượng cao và thủ công tinh xảo"
     },
     {
       icon: Truck,
-      title: "Fast Shipping",
-      description: "Quick delivery to get your business operations running smoothly"
+      title: "Giao Hàng Nhanh Chóng",
+      description: "Giao hàng nhanh để doanh nghiệp của bạn hoạt động trơn tru"
     }
   ];
 
   const featuredProducts = [
     {
       id: 1,
-      name: "Professional Tape Dispenser",
-      price: "$24.99",
+      name: "Máy Cắt Băng Keo Chuyên Nghiệp",
+      price: "599.000đ",
       image: tapeDispenser,
-      description: "Heavy-duty tape dispenser for efficient packaging"
+      description: "Máy cắt băng keo hạng nặng cho đóng gói hiệu quả"
     },
     {
       id: 2,
-      name: "Safety Box Cutter",
-      price: "$18.99",
+      name: "Dao Cắt Thùng An Toàn",
+      price: "459.000đ",
       image: boxCutter,
-      description: "Professional box cutter with safety features"
+      description: "Dao cắt thùng chuyên nghiệp với tính năng an toàn"
     },
     {
       id: 3,
-      name: "Digital Packaging Scale",
-      price: "$89.99",
+      name: "Cân Đóng Gói Điện Tử",
+      price: "2.199.000đ",
       image: packagingScale,
-      description: "Accurate digital scale for package weighing"
+      description: "Cân điện tử chính xác cho việc cân kiện hàng"
     }
   ];
 
@@ -59,22 +59,22 @@ const Home = () => {
             <div className="space-y-8">
               <div className="space-y-4">
                 <h1 className="text-4xl md:text-6xl font-bold text-foreground leading-tight">
-                  Smart <span className="text-primary">COD Packaging</span> Tools
+                  Dụng Cụ <span className="text-primary">Đóng Gói COD</span> Thông Minh
                 </h1>
                 <p className="text-xl text-muted-foreground max-w-lg">
-                  Professional packaging solutions for modern businesses. 
-                  Discover our innovative tools designed to streamline your COD operations.
+                  Giải pháp đóng gói chuyên nghiệp cho doanh nghiệp hiện đại. 
+                  Khám phá các dụng cụ sáng tạo được thiết kế để tối ưu hóa hoạt động COD của bạn.
                 </p>
               </div>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Button asChild size="lg" className="group">
                   <Link to="/products">
-                    Shop Now
+                    Mua Ngay
                     <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
                   </Link>
                 </Button>
                 <Button variant="outline" size="lg" asChild>
-                  <Link to="/about">Learn More</Link>
+                  <Link to="/about">Tìm Hiểu Thêm</Link>
                 </Button>
               </div>
             </div>
@@ -94,11 +94,11 @@ const Home = () => {
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-              Why Choose MisoPack?
+              Tại Sao Chọn MisoPack?
             </h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              We provide premium packaging tools that help businesses operate more efficiently 
-              and professionally in the COD market.
+              Chúng tôi cung cấp dụng cụ đóng gói cao cấp giúp doanh nghiệp hoạt động hiệu quả 
+              và chuyên nghiệp hơn trong thị trường COD.
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -129,10 +129,10 @@ const Home = () => {
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-              Featured Products
+              Sản Phẩm Nổi Bật
             </h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Discover our most popular packaging tools designed for professional COD operations.
+              Khám phá các dụng cụ đóng gói phổ biến nhất được thiết kế cho hoạt động COD chuyên nghiệp.
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -162,7 +162,7 @@ const Home = () => {
                     <span className="text-2xl font-bold text-primary">
                       {product.price}
                     </span>
-                    <Button size="sm">Add to Cart</Button>
+                    <Button size="sm">Thêm Vào Giỏ</Button>
                   </div>
                 </CardContent>
               </Card>
@@ -170,7 +170,7 @@ const Home = () => {
           </div>
           <div className="text-center mt-12">
             <Button asChild size="lg" variant="outline">
-              <Link to="/products">View All Products</Link>
+              <Link to="/products">Xem Tất Cả Sản Phẩm</Link>
             </Button>
           </div>
         </div>
@@ -180,21 +180,21 @@ const Home = () => {
       <section className="py-20 bg-primary text-primary-foreground">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
-            Ready to Upgrade Your Packaging?
+            Sẵn Sàng Nâng Cấp Dụng Cụ Đóng Gói?
           </h2>
           <p className="text-lg mb-8 opacity-90 max-w-2xl mx-auto">
-            Join thousands of businesses that trust MisoPack for their COD packaging needs. 
-            Professional tools, exceptional service, guaranteed results.
+            Hàng nghìn doanh nghiệp đã tin tưởng MisoPack cho nhu cầu đóng gói COD. 
+            Dụng cụ chuyên nghiệp, dịch vụ xuất sắc, kết quả đảm bảo.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button asChild size="lg" variant="secondary" className="group">
               <Link to="/products">
-                Shop Now
+                Mua Ngay
                 <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
               </Link>
             </Button>
             <Button asChild size="lg" variant="outline" className="border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary">
-              <Link to="/contact">Contact Us</Link>
+              <Link to="/contact">Liên Hệ Ngay</Link>
             </Button>
           </div>
         </div>

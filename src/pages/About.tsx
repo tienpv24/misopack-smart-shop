@@ -5,40 +5,40 @@ const About = () => {
   const values = [
     {
       icon: Target,
-      title: "Innovation",
-      description: "We constantly innovate to bring you the latest in packaging technology and design."
+      title: "Đổi Mới",
+      description: "Chúng tôi liên tục đổi mới để mang đến cho bạn những công nghệ và thiết kế đóng gói mới nhất."
     },
     {
       icon: Heart,
-      title: "Customer Focus",
-      description: "Your success is our priority. We're committed to providing exceptional service and support."
+      title: "Tập Trung Khách Hàng",
+      description: "Sự thành công của bạn là ưu tiên hàng đầu. Chúng tôi cam kết cung cấp dịch vụ và hỗ trợ xuất sắc."
     },
     {
       icon: Award,
-      title: "Quality Excellence",
-      description: "Every product meets our rigorous quality standards for durability and performance."
+      title: "Chất Lượng Tuyệt Vời",
+      description: "Mọi sản phẩm đều đáp ứng tiêu chuẩn chất lượng nghiêm ngặt về độ bền và hiệu suất."
     },
     {
       icon: Users,
-      title: "Partnership",
-      description: "We build lasting relationships with our clients, growing together as trusted partners."
+      title: "Đối Tác",
+      description: "Chúng tôi xây dựng mối quan hệ lâu dài với khách hàng, cùng nhau phát triển như những đối tác tin cậy."
     }
   ];
 
   const achievements = [
-    { number: "10,000+", label: "Happy Customers" },
-    { number: "5+", label: "Years of Excellence" },
-    { number: "50+", label: "Product Range" },
-    { number: "99%", label: "Customer Satisfaction" }
+    { number: "10.000+", label: "Khách Hàng Hài Lòng" },
+    { number: "5+", label: "Năm Hoàn Hảo" },
+    { number: "50+", label: "Dòng Sản Phẩm" },
+    { number: "99%", label: "Sự Hài Lòng Khách Hàng" }
   ];
 
   const commitments = [
-    "Premium quality materials in all our products",
-    "Rigorous testing for durability and performance",
-    "Continuous innovation and product development",
-    "Exceptional customer service and support",
-    "Fast and reliable shipping nationwide",
-    "Competitive pricing without compromising quality"
+    "Vật liệu cao cấp trong tất cả sản phẩm của chúng tôi",
+    "Kiểm tra nghiêm ngặt về độ bền và hiệu suất",
+    "Đổi mới và phát triển sản phẩm liên tục",
+    "Dịch vụ khách hàng và hỗ trợ đặc biệt",
+    "Giao hàng nhanh chóng và đáng tin cậy toàn quốc",
+    "Giá cả cạnh tranh mà không ảnh hưởng đến chất lượng"
   ];
 
   return (
@@ -47,12 +47,12 @@ const About = () => {
         {/* Hero Section */}
         <div className="text-center mb-16">
           <h1 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
-            About MisoPack
+            Về MisoPack
           </h1>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            Since our founding, MisoPack has been dedicated to revolutionizing the COD packaging industry 
-            with innovative, high-quality tools that help businesses operate more efficiently and professionally. 
-            We understand the unique challenges of COD operations and design our products to address them directly.
+            Kể từ khi thành lập, MisoPack đã tận tâm cách mạng hóa ngành đóng gói COD 
+            với những dụng cụ sáng tạo, chất lượng cao giúp doanh nghiệp hoạt động hiệu quả và chuyên nghiệp hơn. 
+            Chúng tôi hiểu những thách thức độc đáo của hoạt động COD và thiết kế sản phẩm để giải quyết trực tiếp các vấn đề đó.
           </p>
         </div>
 
@@ -60,22 +60,22 @@ const About = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
           <Card className="p-8 bg-gradient-to-br from-primary/5 to-primary/10 border-primary/20">
             <CardContent className="p-0">
-              <h2 className="text-2xl font-bold text-foreground mb-4">Our Vision</h2>
+              <h2 className="text-2xl font-bold text-foreground mb-4">Tầm Nhìn Của Chúng Tôi</h2>
               <p className="text-muted-foreground leading-relaxed">
-                To be the leading provider of smart packaging solutions, empowering businesses 
-                worldwide to deliver exceptional customer experiences through innovative, reliable, 
-                and efficient packaging tools that streamline operations and enhance professionalism.
+                Trở thành nhà cung cấp hàng đầu các giải pháp đóng gói thông minh, trao quyền cho các doanh nghiệp 
+                trên toàn thế giới mang đến trải nghiệm khách hàng đặc biệt thông qua các dụng cụ đóng gói sáng tạo, đáng tin cậy, 
+                và hiệu quả giúp tối ưu hóa hoạt động và nâng cao tính chuyên nghiệp.
               </p>
             </CardContent>
           </Card>
 
           <Card className="p-8 bg-gradient-to-br from-secondary/50 to-background border-secondary">
             <CardContent className="p-0">
-              <h2 className="text-2xl font-bold text-foreground mb-4">Our Mission</h2>
+              <h2 className="text-2xl font-bold text-foreground mb-4">Sứ Mệnh Của Chúng Tôi</h2>
               <p className="text-muted-foreground leading-relaxed">
-                To design and manufacture premium packaging tools that solve real-world challenges 
-                faced by COD businesses. We are committed to delivering products that combine 
-                functionality, durability, and innovation while providing exceptional customer service.
+                Thiết kế và sản xuất dụng cụ đóng gói cao cấp giải quyết những thách thức thực tế 
+                mà các doanh nghiệp COD gặp phải. Chúng tôi cam kết cung cấp sản phẩm kết hợp 
+                chức năng, độ bền và sự đổi mới cùng với dịch vụ khách hàng đặc biệt.
               </p>
             </CardContent>
           </Card>
@@ -84,7 +84,7 @@ const About = () => {
         {/* Values */}
         <div className="mb-16">
           <h2 className="text-2xl md:text-3xl font-bold text-foreground text-center mb-12">
-            Our Core Values
+            Giá Trị Cốt Lõi
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {values.map((value, index) => {
@@ -111,7 +111,7 @@ const About = () => {
         {/* Achievements */}
         <div className="bg-primary text-primary-foreground rounded-2xl p-8 md:p-12 mb-16">
           <h2 className="text-2xl md:text-3xl font-bold text-center mb-12">
-            Our Achievements
+            Thành Tích Của Chúng Tôi
           </h2>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             {achievements.map((achievement, index) => (
@@ -130,7 +130,7 @@ const About = () => {
         {/* Our Commitments */}
         <div className="mb-16">
           <h2 className="text-2xl md:text-3xl font-bold text-foreground text-center mb-12">
-            Our Commitments
+            Cam Kết Của Chúng Tôi
           </h2>
           <div className="max-w-4xl mx-auto">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -147,7 +147,7 @@ const About = () => {
         {/* Why Choose Us */}
         <div className="bg-card rounded-2xl p-8 md:p-12">
           <h2 className="text-2xl md:text-3xl font-bold text-foreground text-center mb-8">
-            Why Choose MisoPack?
+            Tại Sao Chọn MisoPack?
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="text-center">
@@ -155,10 +155,10 @@ const About = () => {
                 <Award className="h-8 w-8 text-primary" />
               </div>
               <h3 className="text-lg font-semibold text-foreground mb-2">
-                Industry Expertise
+                Chuyên Môn Ngành
               </h3>
               <p className="text-muted-foreground text-sm">
-                Years of experience in understanding and solving COD packaging challenges.
+                Nhiều năm kinh nghiệm trong việc hiểu và giải quyết các thách thức đóng gói COD.
               </p>
             </div>
             
@@ -167,10 +167,10 @@ const About = () => {
                 <Truck className="h-8 w-8 text-primary" />
               </div>
               <h3 className="text-lg font-semibold text-foreground mb-2">
-                Reliable Service
+                Dịch Vụ Đáng Tin Cậy
               </h3>
               <p className="text-muted-foreground text-sm">
-                Fast shipping, excellent customer support, and hassle-free returns.
+                Giao hàng nhanh, hỗ trợ khách hàng xuất sắc và đổi trả không rắc rối.
               </p>
             </div>
             
@@ -179,10 +179,10 @@ const About = () => {
                 <Target className="h-8 w-8 text-primary" />
               </div>
               <h3 className="text-lg font-semibold text-foreground mb-2">
-                Proven Results
+                Kết Quả Đã Chứng Minh
               </h3>
               <p className="text-muted-foreground text-sm">
-                Thousands of satisfied customers who have improved their operations with our tools.
+                Hàng nghìn khách hàng hài lòng đã cải thiện hoạt động với dụng cụ của chúng tôi.
               </p>
             </div>
           </div>

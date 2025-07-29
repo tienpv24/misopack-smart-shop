@@ -9,10 +9,10 @@ const Header = () => {
   const location = useLocation();
 
   const navigation = [
-    { name: "Home", href: "/" },
-    { name: "Products", href: "/products" },
-    { name: "About Us", href: "/about" },
-    { name: "Contact", href: "/contact" },
+    { name: "Trang Chủ", href: "/" },
+    { name: "Sản Phẩm", href: "/products" },
+    { name: "Về Chúng Tôi", href: "/about" },
+    { name: "Liên Hệ", href: "/contact" },
   ];
 
   const isActive = (path: string) => location.pathname === path;

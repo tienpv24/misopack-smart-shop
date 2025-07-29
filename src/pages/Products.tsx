@@ -18,78 +18,78 @@ const Products = () => {
   const products = [
     {
       id: 1,
-      name: "Professional Tape Dispenser",
-      price: 24.99,
-      originalPrice: 29.99,
+      name: "Máy Cắt Băng Keo Chuyên Nghiệp",
+      price: 599000,
+      originalPrice: 729000,
       category: "dispensers",
       image: tapeDispenser,
-      description: "Heavy-duty tape dispenser with ergonomic design. Perfect for high-volume packaging operations.",
-      features: ["Ergonomic grip", "Non-slip base", "Adjustable tension", "Compatible with standard tapes"],
+      description: "Máy cắt băng keo hạng nặng với thiết kế ergonomic. Hoàn hảo cho các hoạt động đóng gói khối lượng lớn.",
+      features: ["Tay cầm ergonomic", "Đế chống trượt", "Điều chỉnh lực căng", "Tương thích băng keo tiêu chuẩn"],
       rating: 4.9,
       reviews: 156,
       inStock: true
     },
     {
       id: 2,
-      name: "Safety Box Cutter",
-      price: 18.99,
-      originalPrice: 22.99,
+      name: "Dao Cắt Thùng An Toàn",
+      price: 459000,
+      originalPrice: 559000,
       category: "cutters",
       image: boxCutter,
-      description: "Professional box cutter with retractable blade and safety lock. Essential for safe package opening.",
-      features: ["Retractable blade", "Safety lock", "Ergonomic handle", "Replaceable blades"],
+      description: "Dao cắt thùng chuyên nghiệp với lưỡi dao có thể thu vào và khóa an toàn. Thiết yếu cho việc mở kiện hàng an toàn.",
+      features: ["Lưỡi dao thu vào", "Khóa an toàn", "Tay cầm ergonomic", "Lưỡi dao có thể thay thế"],
       rating: 4.8,
       reviews: 203,
       inStock: true
     },
     {
       id: 3,
-      name: "Digital Packaging Scale",
-      price: 89.99,
-      originalPrice: 109.99,
+      name: "Cân Đóng Gói Điện Tử",
+      price: 2199000,
+      originalPrice: 2699000,
       category: "scales",
       image: packagingScale,
-      description: "Accurate digital scale with large display. Perfect for weighing packages up to 50kg.",
-      features: ["50kg capacity", "Large LCD display", "Tare function", "Multiple units"],
+      description: "Cân điện tử chính xác với màn hình lớn. Hoàn hảo cho việc cân kiện hàng lên đến 50kg.",
+      features: ["Tải trọng 50kg", "Màn hình LCD lớn", "Chức năng Tare", "Nhiều đơn vị đo"],
       rating: 4.7,
       reviews: 89,
       inStock: true
     },
     {
       id: 4,
-      name: "Premium Tape Dispenser Set",
-      price: 45.99,
-      originalPrice: 55.99,
+      name: "Bộ Máy Cắt Băng Keo Cao Cấp",
+      price: 1119000,
+      originalPrice: 1359000,
       category: "dispensers",
       image: tapeDispenser,
-      description: "Complete set with 2 tape dispensers and 6 rolls of premium packing tape.",
-      features: ["2 dispensers included", "6 tape rolls", "Heavy-duty construction", "Commercial grade"],
+      description: "Bộ sản phẩm hoàn chỉnh với 2 máy cắt băng keo và 6 cuộn băng keo cao cấp.",
+      features: ["Bao gồm 2 máy cắt", "6 cuộn băng keo", "Cấu trúc hạng nặng", "Cấp độ thương mại"],
       rating: 4.9,
       reviews: 124,
       inStock: true
     },
     {
       id: 5,
-      name: "Industrial Box Cutter Kit",
-      price: 32.99,
-      originalPrice: 39.99,
+      name: "Bộ Dao Cắt Thùng Công Nghiệp",
+      price: 799000,
+      originalPrice: 969000,
       category: "cutters",
       image: boxCutter,
-      description: "Professional kit with box cutter, 10 replacement blades, and safety storage case.",
-      features: ["10 replacement blades", "Safety storage case", "Professional grade", "Non-slip grip"],
+      description: "Bộ dụng cụ chuyên nghiệp với dao cắt thùng, 10 lưỡi dao thay thế và hộp đựng an toàn.",
+      features: ["10 lưỡi dao thay thế", "Hộp đựng an toàn", "Cấp độ chuyên nghiệp", "Tay cầm chống trượt"],
       rating: 4.8,
       reviews: 167,
       inStock: false
     },
     {
       id: 6,
-      name: "Portable Packaging Scale",
-      price: 59.99,
-      originalPrice: 69.99,
+      name: "Cân Đóng Gói Di Động",
+      price: 1459000,
+      originalPrice: 1699000,
       category: "scales",
       image: packagingScale,
-      description: "Compact and portable scale perfect for mobile COD operations. Battery powered.",
-      features: ["Battery powered", "Compact design", "20kg capacity", "Backlit display"],
+      description: "Cân nhỏ gọn và di động hoàn hảo cho hoạt động COD di động. Chạy bằng pin.",
+      features: ["Chạy bằng pin", "Thiết kế nhỏ gọn", "Tải trọng 20kg", "Màn hình có đèn nền"],
       rating: 4.6,
       reviews: 78,
       inStock: true
@@ -99,26 +99,26 @@ const Products = () => {
   const filteredProducts = products
     .filter(product => {
       const matchesSearch = product.name.toLowerCase().includes(searchTerm.toLowerCase());
-      const matchesCategory = filterCategory === "all" || product.category === filterCategory;
-      return matchesSearch && matchesCategory;
-    })
-    .sort((a, b) => {
-      switch (sortBy) {
-        case "price-low":
-          return a.price - b.price;
-        case "price-high":
-          return b.price - a.price;
-        case "rating":
-          return b.rating - a.rating;
-        default:
-          return a.name.localeCompare(b.name);
-      }
-    });
+                      const matchesCategory = filterCategory === "all" || product.category === filterCategory;
+                      return matchesSearch && matchesCategory;
+                    })
+                    .sort((a, b) => {
+                      switch (sortBy) {
+                        case "price-low":
+                          return a.price - b.price;
+                        case "price-high":
+                          return b.price - a.price;
+                        case "rating":
+                          return b.rating - a.rating;
+                        default:
+                          return a.name.localeCompare(b.name);
+                      }
+                    });
 
   const handleAddToCart = (product: typeof products[0]) => {
     toast({
-      title: "Added to Cart",
-      description: `${product.name} has been added to your cart.`,
+      title: "Đã Thêm Vào Giỏ Hàng",
+      description: `${product.name} đã được thêm vào giỏ hàng của bạn.`,
     });
   };
 
@@ -128,11 +128,11 @@ const Products = () => {
         {/* Header */}
         <div className="mb-8">
           <h1 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-            Our Products
+            Sản Phẩm Của Chúng Tôi
           </h1>
           <p className="text-lg text-muted-foreground max-w-2xl">
-            Discover our complete range of professional COD packaging tools. 
-            Each product is designed to improve efficiency and professionalism in your operations.
+            Khám phá dòng sản phẩm đầy đủ của chúng tôi về dụng cụ đóng gói COD chuyên nghiệp. 
+            Mỗi sản phẩm được thiết kế để cải thiện hiệu quả và tính chuyên nghiệp trong hoạt động của bạn.
           </p>
         </div>
 
@@ -141,7 +141,7 @@ const Products = () => {
           <div className="relative flex-1 max-w-md">
             <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-muted-foreground h-4 w-4" />
             <Input
-              placeholder="Search products..."
+              placeholder="Tìm kiếm sản phẩm..."
               value={searchTerm}
               onChange={(e) => setSearchTerm(e.target.value)}
               className="pl-10"
@@ -151,25 +151,25 @@ const Products = () => {
           <Select value={filterCategory} onValueChange={setFilterCategory}>
             <SelectTrigger className="w-full md:w-48">
               <Filter className="h-4 w-4 mr-2" />
-              <SelectValue placeholder="Category" />
+              <SelectValue placeholder="Danh mục" />
             </SelectTrigger>
             <SelectContent>
-              <SelectItem value="all">All Categories</SelectItem>
-              <SelectItem value="dispensers">Tape Dispensers</SelectItem>
-              <SelectItem value="cutters">Box Cutters</SelectItem>
-              <SelectItem value="scales">Scales</SelectItem>
+              <SelectItem value="all">Tất Cả Danh Mục</SelectItem>
+              <SelectItem value="dispensers">Máy Cắt Băng Keo</SelectItem>
+              <SelectItem value="cutters">Dao Cắt Thùng</SelectItem>
+              <SelectItem value="scales">Cân Đóng Gói</SelectItem>
             </SelectContent>
           </Select>
 
           <Select value={sortBy} onValueChange={setSortBy}>
             <SelectTrigger className="w-full md:w-48">
-              <SelectValue placeholder="Sort by" />
+              <SelectValue placeholder="Sắp xếp theo" />
             </SelectTrigger>
             <SelectContent>
-              <SelectItem value="name">Name A-Z</SelectItem>
-              <SelectItem value="price-low">Price: Low to High</SelectItem>
-              <SelectItem value="price-high">Price: High to Low</SelectItem>
-              <SelectItem value="rating">Highest Rated</SelectItem>
+              <SelectItem value="name">Tên A-Z</SelectItem>
+              <SelectItem value="price-low">Giá: Thấp đến Cao</SelectItem>
+              <SelectItem value="price-high">Giá: Cao đến Thấp</SelectItem>
+              <SelectItem value="rating">Đánh Giá Cao Nhất</SelectItem>
             </SelectContent>
           </Select>
         </div>
@@ -186,13 +186,13 @@ const Products = () => {
                 />
                 {product.originalPrice > product.price && (
                   <div className="absolute top-4 left-4 bg-primary text-primary-foreground px-2 py-1 rounded text-sm font-medium">
-                    Save ${(product.originalPrice - product.price).toFixed(2)}
+                    Tiết kiệm {((product.originalPrice - product.price) / 1000).toFixed(0)}k
                   </div>
                 )}
                 {!product.inStock && (
                   <div className="absolute inset-0 bg-black/50 flex items-center justify-center">
                     <span className="bg-destructive text-destructive-foreground px-4 py-2 rounded font-medium">
-                      Out of Stock
+                      Hết Hàng
                     </span>
                   </div>
                 )}
@@ -224,7 +224,7 @@ const Products = () => {
                 </p>
 
                 <div className="mb-4">
-                  <h4 className="text-sm font-medium text-foreground mb-2">Features:</h4>
+                  <h4 className="text-sm font-medium text-foreground mb-2">Tính năng:</h4>
                   <ul className="text-sm text-muted-foreground space-y-1">
                     {product.features.slice(0, 2).map((feature, index) => (
                       <li key={index}>• {feature}</li>
@@ -236,11 +236,11 @@ const Products = () => {
                   <div className="space-y-1">
                     <div className="flex items-center gap-2">
                       <span className="text-2xl font-bold text-primary">
-                        ${product.price}
+                        {(product.price / 1000).toFixed(0)}k VNĐ
                       </span>
                       {product.originalPrice > product.price && (
                         <span className="text-sm text-muted-foreground line-through">
-                          ${product.originalPrice}
+                          {(product.originalPrice / 1000).toFixed(0)}k VNĐ
                         </span>
                       )}
                     </div>
@@ -252,7 +252,7 @@ const Products = () => {
                     className="group"
                   >
                     <ShoppingCart className="h-4 w-4 mr-2" />
-                    {product.inStock ? "Add to Cart" : "Out of Stock"}
+                    {product.inStock ? "Thêm Vào Giỏ" : "Hết Hàng"}
                   </Button>
                 </div>
               </CardContent>
@@ -263,7 +263,7 @@ const Products = () => {
         {filteredProducts.length === 0 && (
           <div className="text-center py-12">
             <p className="text-lg text-muted-foreground">
-              No products found matching your criteria.
+              Không tìm thấy sản phẩm phù hợp với tiêu chí của bạn.
             </p>
           </div>
         )}

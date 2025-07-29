@@ -10,8 +10,8 @@ const Footer = () => {
           <div className="space-y-4">
             <h3 className="text-lg font-semibold text-foreground">MisoPack</h3>
             <p className="text-muted-foreground">
-              Professional smart COD packaging tools for modern businesses. 
-              Reliable, efficient, and innovative solutions.
+              Dụng cụ đóng gói COD thông minh dành cho doanh nghiệp hiện đại. 
+              Giải pháp đáng tin cậy, hiệu quả và sáng tạo.
             </p>
             <div className="flex space-x-4">
               <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
@@ -25,59 +25,59 @@ const Footer = () => {
 
           {/* Quick Links */}
           <div className="space-y-4">
-            <h3 className="text-lg font-semibold text-foreground">Quick Links</h3>
+            <h3 className="text-lg font-semibold text-foreground">Liên Kết</h3>
             <nav className="flex flex-col space-y-2">
               <Link to="/" className="text-muted-foreground hover:text-primary transition-colors">
-                Home
+                Trang Chủ
               </Link>
               <Link to="/products" className="text-muted-foreground hover:text-primary transition-colors">
-                Products
+                Sản Phẩm
               </Link>
               <Link to="/about" className="text-muted-foreground hover:text-primary transition-colors">
-                About Us
+                Về Chúng Tôi
               </Link>
               <Link to="/contact" className="text-muted-foreground hover:text-primary transition-colors">
-                Contact
+                Liên Hệ
               </Link>
             </nav>
           </div>
 
           {/* Products */}
           <div className="space-y-4">
-            <h3 className="text-lg font-semibold text-foreground">Our Products</h3>
+            <h3 className="text-lg font-semibold text-foreground">Sản Phẩm</h3>
             <nav className="flex flex-col space-y-2">
               <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
-                Tape Dispensers
+                Máy Cắt Băng Keo
               </a>
               <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
-                Box Cutters
+                Dao Cắt Thùng Carton
               </a>
               <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
-                Packaging Scales
+                Cân Đóng Gói
               </a>
               <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
-                Sealing Tools
+                Dụng Cụ Niêm Phong
               </a>
             </nav>
           </div>
 
           {/* Contact Info */}
           <div className="space-y-4">
-            <h3 className="text-lg font-semibold text-foreground">Contact Info</h3>
+            <h3 className="text-lg font-semibold text-foreground">Thông Tin Liên Hệ</h3>
             <div className="space-y-3">
               <div className="flex items-center space-x-3">
                 <Phone className="h-4 w-4 text-primary" />
-                <span className="text-muted-foreground">+1 (555) 123-4567</span>
+                <span className="text-muted-foreground">+84 (028) 1234-5678</span>
               </div>
               <div className="flex items-center space-x-3">
                 <Mail className="h-4 w-4 text-primary" />
-                <span className="text-muted-foreground">info@misopack.com</span>
+                <span className="text-muted-foreground">info@misopack.vn</span>
               </div>
               <div className="flex items-center space-x-3">
                 <MapPin className="h-4 w-4 text-primary" />
                 <span className="text-muted-foreground">
-                  123 Business Ave, Suite 100<br />
-                  City, State 12345
+                  123 Đường Kinh Doanh, Quận 1<br />
+                  TP. Hồ Chí Minh, Việt Nam
                 </span>
               </div>
             </div>
@@ -86,7 +86,7 @@ const Footer = () => {
 
         <div className="border-t mt-8 pt-8 text-center">
           <p className="text-muted-foreground">
-            © 2024 MisoPack. All rights reserved. | Privacy Policy | Terms of Service
+            © 2024 MisoPack. Bảo lưu mọi quyền. | Chính Sách Bảo Mật | Điều Khoản Dịch Vụ
           </p>
         </div>
       </div>
