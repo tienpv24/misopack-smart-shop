@@ -80,8 +80,8 @@ const Home = () => {
             </div>
             <div className="relative">
               <img 
-                src={heroImage} 
-                alt="MisoPack Packaging Tools" 
+                src="/lovable-uploads/6ec86c8a-2934-41c2-85f5-b12435a4128c.png" 
+                alt="Nhân viên MisoPack giới thiệu dụng cụ đóng gói chuyên nghiệp" 
                 className="rounded-lg shadow-strong w-full h-auto"
               />
             </div>
