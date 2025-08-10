@@ -24,7 +24,7 @@ const Header = () => {
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-2">
             <img 
-              src="/lovable-uploads/6ec86c8a-2934-41c2-85f5-b12435a4128c.png" 
+              src="/lovable-uploads/d13cdd65-7d87-44a5-8c57-691733dc44cf.png" 
               alt="MisoPack" 
               className="h-8 w-auto"
             />
