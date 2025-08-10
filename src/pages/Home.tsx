@@ -58,9 +58,9 @@ const Home = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="space-y-8">
               <div className="space-y-4">
-                <h1 className="text-4xl md:text-6xl font-bold text-foreground leading-[3] tracking-[-0.05em]">
-                  Dụng Cụ <span className="text-primary">Đóng Gói COD</span> <br />
-                  Thông Minh
+                <h1 className="text-3xl md:text-5xl font-bold text-foreground leading-[3] tracking-[-0.05em]">
+                  Dụng Cụ Đóng Gói <br />
+                  <span className="text-primary">COD</span> Thông Minh
                 </h1>
                 <p className="text-xl text-muted-foreground max-w-lg">
                   Giải pháp đóng gói chuyên nghiệp cho doanh nghiệp hiện đại. 
