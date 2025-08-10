@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Menu, X, ShoppingCart } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import misopackLogo from "@/assets/misopack-logo.png";
+
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -24,7 +24,7 @@ const Header = () => {
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-2">
             <img 
-              src={misopackLogo} 
+              src="/lovable-uploads/6ec86c8a-2934-41c2-85f5-b12435a4128c.png" 
               alt="MisoPack" 
               className="h-8 w-auto"
             />
