@@ -59,8 +59,7 @@ const Home = () => {
             <div className="space-y-8">
               <div className="space-y-4">
                 <h1 className="text-4xl md:text-6xl font-bold text-foreground leading-[3]">
-                  Dụng Cụ <br />
-                  <span className="text-primary">Đóng Gói COD</span> <br />
+                  Dụng Cụ <span className="text-primary">Đóng Gói COD</span> <br />
                   Thông Minh
                 </h1>
                 <p className="text-xl text-muted-foreground max-w-lg">
