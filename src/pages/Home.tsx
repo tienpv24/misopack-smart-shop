@@ -58,7 +58,7 @@ const Home = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="space-y-8">
               <div className="space-y-4">
-                <h1 className="text-4xl md:text-6xl font-bold text-foreground leading-tight">
+                <h1 className="text-4xl md:text-6xl font-bold text-foreground leading-[1.5]">
                   Dụng Cụ <span className="text-primary">Đóng Gói COD</span> Thông Minh
                 </h1>
                 <p className="text-xl text-muted-foreground max-w-lg">
